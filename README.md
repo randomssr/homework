@@ -1,0 +1,9 @@
+# homework
+multiembeb.m文件是将一张secret图片（黑白或灰度）嵌入到cover_image中。
+此次将secret的每个像素点的8个比特分别嵌入到cover_image的R层（后三位）、G层（后三位）、B层（后两位）
+secret的size是double型，因此使用16个字节将secret的行列数嵌入进去
+用法：multiembed（cover_image,secret_image,isgray）
+其中cover_image和secret_image表示文件名，isgray表示secret_image是否是灰度图片
+
+multiextract.m文件用于将secret_image从stago中提取出来
+用法：multiextract（stago_image）
